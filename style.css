@@ -9,7 +9,9 @@ body {
 }
 
 #squaresContainer {
-    height: 100%;
-    width: 100%;
+    border: 50px solid red;
+    border-radius: 20px;
+    height: 70%;
+    width: 80%;
     display: grid;
 }
