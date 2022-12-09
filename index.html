@@ -9,7 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button id="changeGridBtn">Change Grid</button>
-    <div id="squaresContainer"></div>
+    <div id="etch-a-sketch">
+        <div id="squaresContainer"></div>
+        <div id="buttons">
+            <button id="changeGridBtn" class="button">Change Grid Size</button>
+            <div id="changeColorBtnContainer" class="dropdown">
+                <button onclick="displayDropdown()" id="changeColorBtn" class="button">Change Marker Color</button>
+                <div id="dropdownDiv" class="dropdownList">
+                    <button onclick="changeColor('black')">Black</button>
+                    <button onclick="changeColor('grey')">Grey</button>
+                    <button onclick="changeColor(getRandomColor())">Random</button>
+                </div>
+            </div>    
+        </div>
+    </div>
 </body>
 </html>

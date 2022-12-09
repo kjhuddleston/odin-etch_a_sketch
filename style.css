@@ -4,14 +4,84 @@ html {
 }
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+#etch-a-sketch {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 80%;
+    border: 50px solid red;
+    border-bottom: 100px solid red;
+    border-radius: 20px;
+}
+
+#squaresContainer {
+    display: grid;
     height: 100%;
     width: 100%;
 }
 
-#squaresContainer {
-    border: 50px solid red;
-    border-radius: 20px;
-    height: 70%;
-    width: 80%;
-    display: grid;
+#buttons {
+    position: absolute;
+    display: flex;
+    bottom: 7%;
+    left: 10%;
+    right: 10%;
+}
+
+#changeGridBtn {
+    position: absolute;
+    right: 0;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.button:hover {
+    background-color: yellow;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownList {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
+    color: rgb(135, 46, 46)
 }
